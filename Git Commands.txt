@@ -1,0 +1,157 @@
+########################################## Git Commands ############################################
+
+## Initializes a new Git repository in the current directory.
+$ git init
+
+## Clones an existing repository from GitHub to your local machine.
+$ git clone <repository-url>
+
+## Check Repository Status
+$ git status
+
+## Adds specific files to the staging area.
+$ git add <file-name>
+
+## Adds all changes in the working directory to the staging area.
+$ git add .
+
+## Commit Changes
+$ git commit -m "commit message"
+
+## Pushes commits from your local repository to the remote repository on GitHub.
+$ git push origin <branch-name>
+
+## Fetches and merges changes from the remote repository to your local branch "Pull Changes from GitHub"
+$ git pull origin <branch-name>
+
+## View Commit History
+$ git log
+
+## Creates and switches to a new branch.
+$ git checkout -b <branch-name>
+
+## Switches to an existing branch.
+$ git checkout <branch-name>
+
+## Merges changes from the specified branch into the current branch.
+$ git merge <branch-name>
+
+## Creates a new commit that undoes changes from the specified commit.
+$ git revert <commit-hash>
+
+## Reset to a Previous Commit
+$ git reset --hard <commit-hash>
+
+## Fetches updates from the remote repository without merging them into your current branch.
+$ git fetch origin
+
+## Temporarily stores uncommitted changes
+$ git stash
+
+## Apply Stashed Changes
+$ git stash apply
+
+## List Stashed Changes
+$ git stash list
+
+## Discard Stashed Changes  OR Removes the latest stashed changes.
+$ git stash drop
+
+## Tagging
+$ git tag <tag-name>
+
+## Pushes the tag to the remote repository.
+$ git push origin <tag-name>
+
+## Fork a Repository : reates a copy of the repository in your GitHub account.
+
+## Check Remote Repository
+$ git remote -v
+
+## Add a Remote Repository
+$ git remote add origin <repository-url>
+
+## Rename a Remote
+$ git remote rename origin upstream
+
+## Resolve Merge Conflicts
+$ git add <resolved-file>
+$ git commit
+
+## Configure User Information
+$ git config --global user.name "Your Name"
+$ git config --global user.email "your.email@example.com"
+
+## Configure Aliases
+$ git config --global alias.co checkout
+$ git config --global alias.br branch
+$ git config --global alias.ci commit
+$ git config --global alias.st status
+
+## Check Git Configuration
+$ git config --list
+
+## Applies a specific commit from another branch to your current branch. "Cherry-Pick a Commit"
+$ git cherry-pick <commit-hash>
+
+## Reapplies commits on top of another base tip 
+$git rebase <branch-name>
+
+## Allows you to squash commits interactively.
+$ git rebase -i <commit-hash>
+
+## Helps to find the commit that introduced a bug by binary search.
+$ git bisect start
+$ git bisect bad
+$ git bisect good <commit-hash>
+
+## Shows the commit information for each line in a file (who last modified each line).
+$ git blame <file-name>
+
+## how Differences Between Commits
+$ git diff <commit-hash1> <commit-hash2>
+
+## Shows a log of all references (e.g., when you made changes to branches).
+$ git reflog
+
+## Allows you to modify the last commit 
+$ git commit --amend
+
+## Adds a submodule to your repository.
+$ git submodule add <repository-url>
+
+## Updates the submodules to the latest commit.
+$ git submodule update --remote
+
+## Initialize and Update Submodules
+$ git submodule init
+$ git submodule update
+
+## Setting Up Workflows: The setup typically involves creating YAML files in the .github/workflows/ directory.
+## Triggering Workflows: Workflows are triggered by events such as pushes, pull requests, or scheduled events. 
+No direct commands, but configurations in the YAML file.
+
+#### Using GitHub CLI (gh)
+## Authenticate with GitHub
+$ gh auth login
+
+## Create a New Repository
+$ gh repo create
+
+## Clone a Repository
+$ gh repo clone <repo-owner/repo-name>
+
+## Create a Pull Request
+$ gh pr create
+
+## List Issues
+$ gh issue list
+
+## View Notifications
+$ gh notifications
+
+
+
+
+
+
